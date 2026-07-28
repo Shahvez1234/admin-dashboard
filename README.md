@@ -13,23 +13,37 @@ https://admin-dashboard-2026-tau.vercel.app/
 
 ---
 
-## 📸 Preview
+## 📸 Project Screenshots
 
-The dashboard is designed to provide a clean and professional experience across different screen sizes.
+The dashboard has been designed and tested across desktop and mobile screen sizes, with responsive navigation, cards, charts, tables, profile sections, and notifications.
 
-### Desktop View
+### 🖥️ Desktop Dashboard
 
-*Add your desktop screenshot here.*
+![AdminPro Desktop Dashboard](./public/screenshots/desktop-dashboard.png)
 
-### Tablet View
+### 📋 Recent Orders
 
-*Add your tablet screenshot here.*
+![Recent Orders](./public/screenshots/desktop-orders.png)
 
-### Mobile View
+### 👤 Profile & Notifications
 
-*Add your mobile screenshot here.*
+![Profile and Notifications](./public/screenshots/desktop-profile-notifications.png)
 
----
+### 📱 Mobile Dashboard
+
+![AdminPro Mobile Dashboard](./public/screenshots/mobile-dashboard.png)
+
+### 👤 Mobile Profile & Notifications
+
+![Mobile Profile and Notifications](./public/screenshots/mobile-profile-notifications.png)
+
+### 📊 Mobile Revenue Analytics
+
+![Mobile Revenue Analytics](./public/screenshots/mobile-revenue.png)
+
+### 📱 Mobile Responsive Sidebar
+
+![Mobile Sidebar](./public/screenshots/mobile-sidebar.png)
 
 ## ✨ Features
 
