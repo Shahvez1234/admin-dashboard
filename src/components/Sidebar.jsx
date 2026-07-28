@@ -8,34 +8,41 @@ import {
   LogOut,
   X,
 } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 function Sidebar({ isOpen, setIsOpen }) {
   const menuItems = [
-    {
-      name: "Dashboard",
-      icon: LayoutDashboard,
-    },
-    {
-      name: "Users",
-      icon: Users,
-    },
-    {
-      name: "Orders",
-      icon: ShoppingCart,
-    },
-    {
-      name: "Projects",
-      icon: FolderKanban,
-    },
-    {
-      name: "Analytics",
-      icon: BarChart3,
-    },
-    {
-      name: "Settings",
-      icon: Settings,
-    },
-  ];
+  {
+    name: "Dashboard",
+    icon: LayoutDashboard,
+    path: "/dashboard",
+  },
+  {
+    name: "Users",
+    icon: Users,
+    path: "/users",
+  },
+  {
+    name: "Orders",
+    icon: ShoppingCart,
+    path: "/orders",
+  },
+  {
+    name: "Projects",
+    icon: FolderKanban,
+    path: "/projects",
+  },
+  {
+    name: "Analytics",
+    icon: BarChart3,
+    path: "/analytics",
+  },
+  {
+    name: "Settings",
+    icon: Settings,
+    path: "/settings",
+  },
+];
 
   return (
     <>
@@ -87,27 +94,31 @@ function Sidebar({ isOpen, setIsOpen }) {
           </p>
 
           <div className="space-y-2">
-            {menuItems.map((item, index) => {
-              const Icon = item.icon;
+            {menuItems.map((item) => {
+  const Icon = item.icon;
 
-              return (
-                <button
-                  key={item.name}
-                  className={`group flex w-full items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium transition-all duration-200 ${
-                    index === 0
-                      ? "bg-slate-900 text-white shadow-md"
-                      : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-                  }`}
-                >
-                  <Icon
-                    size={20}
-                    className="transition-transform duration-200 group-hover:scale-110"
-                  />
+  return (
+    <NavLink
+      key={item.name}
+      to={item.path}
+      onClick={() => setIsOpen(false)}
+      className={({ isActive }) =>
+        `group flex w-full items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium transition-all duration-200 ${
+          isActive
+            ? "bg-slate-900 text-white shadow-md"
+            : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+        }`
+      }
+    >
+      <Icon
+        size={20}
+        className="transition-transform duration-200 group-hover:scale-110"
+      />
 
-                  <span>{item.name}</span>
-                </button>
-              );
-            })}
+      <span>{item.name}</span>
+    </NavLink>
+  );
+})}
           </div>
         </nav>
 
