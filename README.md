@@ -132,19 +132,19 @@ This component-based structure makes the application easier to maintain, update,
 
 ---
 
+## 📂 Project Structure
+
+```text
 admin-dashboard/
 │
 ├── public/
 │   └── screenshots/
 │       ├── desktop-dashboard.png
-│       ├── desktop-users.png
-│       ├── desktop-orders.png
-│       ├── desktop-projects.png
-│       ├── desktop-analytics.png
-│       ├── desktop-settings.png
+│       ├── desktop-profile-notifications.png
 │       ├── mobile-dashboard.png
-│       ├── mobile-sidebar.png
-│       └── mobile-settings.png
+│       ├── mobile-profile-notifications.png
+│       ├── mobile-revenue.png
+│       └── mobile-sidebar.png
 │
 ├── src/
 │   │
@@ -160,12 +160,7 @@ admin-dashboard/
 │   │   └── dashboardData.js
 │   │
 │   ├── pages/
-│   │   ├── Analytics.jsx
-│   │   ├── Dashboard.jsx
-│   │   ├── Orders.jsx
-│   │   ├── Projects.jsx
-│   │   ├── Settings.jsx
-│   │   └── Users.jsx
+│   │   └── Dashboard.jsx
 │   │
 │   ├── App.jsx
 │   ├── index.css
