@@ -10,7 +10,7 @@ This project was developed as part of a **Frontend Internship Task** to demonstr
 
 **Live Application:**
 
-https://admin-dashboard-2026-tau.vercel.app/
+https://admin-dashboard-2026-x8as.vercel.app
 
 ---
 
